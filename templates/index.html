@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Game Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#tic-tac-toe">Tic Tac Toe</a></li>
+                <li><a href="{{ url_for('connect')}}">Connect Four</a></li>
+                <!-- Add more games here -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tic-tac-toe">
+            <h2>Tic Tac Toe</h2>
+            <div class="game-board">
+                <!-- Game board will be generated here -->
+            </div>
+            <button id="play-again">Play Again</button>
+        </section>
+        <!-- Add more games here -->
+    </main>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

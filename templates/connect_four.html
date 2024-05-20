@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/connect_four.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Connect Four</h1>
+    </header>
+    <main>
+        <div id="loadingText">AI is thinking...</div>  <!-- Remove style="display: none;" temporarily -->
+        <div id="gameBoard" class="game-board"></div>
+        <button id="resetGame">Reset Game</button>
+    </main>
+    <script src="{{ url_for('static', filename='js/connect_four.js') }}"></script>
+</body>
+</html>
