@@ -30,3 +30,9 @@ def minesweeper():
 def memory():
 
     return render_template('memory.html')
+
+
+@app.route('/breakout')
+def breakout():
+    
+    return render_template('breakout.html')
