@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0; /* Ensures there's no default margin */
+}
+
+#minesweeper-board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+}
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+
+.cell.revealed {
+    background-color: #e0e0e0; /* Lighter color for revealed cells */
+}
+
+.cell.unrevealed {
+    background-color: #aaa; /* Darker color for unrevealed cells */
+}
+
+.cell.mine {
+    background-color: red; /* Red background for cells with mines */
+}
+
+.cell.flagged {
+    background-color: orange; /* Orange background for flagged cells */
+    color: white; /* White text to contrast the background */
+}
+
+/* Additional styling for numbers to make them more visible */
+.cell:not(.mine):not(.flagged):not(.unrevealed) {
+    color: #333;
+    font-weight: bold;
+}

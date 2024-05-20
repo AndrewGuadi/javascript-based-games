@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Game</title>
+    <!-- Ensure the CSS link is correct and the file is accessible in the Flask static directory -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/minesweeper.css') }}">
+</head>
+<body>
+    <h1>Minesweeper</h1>
+    <!-- This is the main game board where the Minesweeper cells will be dynamically added -->
+    <div id="minesweeper-board"></div>
+    <!-- Ensure the JavaScript link is correct and the file is accessible in the Flask static directory -->
+    <script src="{{ url_for('static', filename='js/minesweeper.js') }}"></script>
+</body>
+</html>

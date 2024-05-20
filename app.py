@@ -15,3 +15,13 @@ def index():
 def connect():
 
     return render_template('connect_four.html')
+
+@app.route('/snake')
+def snake():
+
+    return render_template('snake.html')
+
+@app.route('/minesweeper')
+def minesweeper():
+
+    return render_template('minesweeper.html')
