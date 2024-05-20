@@ -25,3 +25,8 @@ def snake():
 def minesweeper():
 
     return render_template('minesweeper.html')
+
+@app.route('/memory')
+def memory():
+
+    return render_template('memory.html')
