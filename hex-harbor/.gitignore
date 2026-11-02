@@ -1,0 +1,5 @@
+node_modules/
+.island-sessions.json
+.env
+*.log
+public/_preview.html
